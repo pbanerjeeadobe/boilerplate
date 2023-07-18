@@ -1,3 +1,7 @@
+.columns {
+  padding-bottom: 24px;
+}
+
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -15,13 +19,14 @@
   order: 0;
 }
 
-.columns > div > .columns-img-col img {
+.columns > div img {
   display: block;
+  border-bottom-right-radius: 90px;
 }
 
 @media (min-width: 900px) {
   .columns > div {
-    align-items: center;
+    vertical-align: top;
     flex-direction: unset;
     gap: 32px;
   }
